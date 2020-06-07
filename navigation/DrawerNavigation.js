@@ -8,6 +8,7 @@ import { SimpleLineIcons } from "@expo/vector-icons"
 
 import Home from "../screens/Home"
 import Favorites from "../screens/Favorites"
+import StackNavigation from "./StackNavigation"
 
 const { Navigator, Screen } = createDrawerNavigator()
 
@@ -85,7 +86,7 @@ const DrawerNavigation = () => {
       drawerType="slide"
       drawerContent={(props) => <DrawerContent {...props} />}
     >
-      <Screen name="Home" component={Home} />
+      <Screen name="StackNavigation" component={StackNavigation} />
       <Screen name="Favorites" component={Favorites} />
     </Navigator>
   )
