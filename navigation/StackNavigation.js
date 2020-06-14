@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack"
 const { Navigator, Screen } = createStackNavigator()
 
 import Home from "../screens/Home"
+import Filter from "../screens/Filter"
 
 const StackNavigation = () => {
   return (
@@ -14,6 +15,11 @@ const StackNavigation = () => {
       }}
     >
       <Screen name="Home" component={Home} options={{ headerTitle: "" }} />
+      <Screen
+        name="Filter"
+        component={Filter}
+        options={{ headerTitle: "Search Settings" }}
+      />
     </Navigator>
   )
 }

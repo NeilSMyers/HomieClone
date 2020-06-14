@@ -20,7 +20,7 @@ const Home = (props) => {
         </TouchableOpacity>
       ),
       headerRight: () => (
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate("Filter")}>
           <SimpleLineIcons
             name="equalizer"
             color="white"

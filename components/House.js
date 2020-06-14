@@ -22,7 +22,7 @@ const House = (props) => {
       <View>
         <Image
           source={{ uri: props.image }}
-          style={{ height: 200, width: "100%" }}
+          style={{ height: 215, width: "100%" }}
         />
         {props.underContract && (
           <View
